@@ -1,0 +1,39 @@
+.menu{
+    background-color: rgba(245,247,249,1.00);
+    
+}
+
+.menu-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+ .menu-item .label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    height: 50px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #6a6a6a;
+    transition: all 0.3s ease;
+}
+ .menu-item .label > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ .menu-item .label:hover {
+    background: #deedff;
+    cursor: pointer;
+}
+ .menu-item .items-container {
+    width: 100%;
+    left: calc(100% + 6px);
+    transition: height 0.3s ease;
+    overflow: hidden;
+}

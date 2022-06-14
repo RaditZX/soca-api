@@ -1,0 +1,20 @@
+{
+  "name": "docsoca",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "scss": "^0.2.4",
+    "vue": "^3.2.36",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "sass": "^1.52.3",
+    "vite": "^2.9.9"
+  }
+}
