@@ -1,7 +1,6 @@
 <template>
-    <div class="container">
+    <div class="container" id="content-container">
          <h1>AI Counter (Soon)</h1>
-            <div class="line"></div>
                 <div class="desc">
                     <p> AI Counter is A deep learning & computer vision to enable seamless counting and sorting in/out products in a flash.</p>
                 </div>

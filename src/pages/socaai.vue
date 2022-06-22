@@ -1,6 +1,9 @@
 <template>
-<img src="../assets/page-cover.png" style="width:100%; height: 220.5px; top: -71.25px;" alt="">
-<div class="container">
+<div class="container-fluid">
+    <img src="../assets/page-cover.png" style="width:100%; height: 220.5px; top: -71.25px;" alt=""/>
+</div>
+
+<div class="container" id="content-container">
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header">
@@ -103,3 +106,9 @@
     
     </div>
 </template>
+
+<style>
+.container-fluid{
+    padding: 0 0 0 268px ;
+}
+</style>

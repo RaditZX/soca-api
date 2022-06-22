@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="content-container">
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header">
@@ -149,11 +149,11 @@
                 </router-link>
             </div>
             <div class="button-route">
-                <router-link to="/socaganita">
+                <router-link to="/face-authentication">
                     <div class="previous" style="text-align: left;"> 
                         <div class="text">
                             <span>Next</span>
-                            <p>Soca Ganita</p>
+                            <p>Face Authentication</p>
                         </div>
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="content-container">
          <h1>Face Authentication (Soon)</h1>
             <div class="line"></div>
                 <div class="desc">
@@ -107,7 +107,7 @@
                 <div class="line"></div>
                 <div class="flex-container">
                     <div class="button-route">
-                        <router-link to="/overview">
+                        <router-link to="/socaganita">
                             <div class="previous">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -116,17 +116,17 @@
                                 </div>
                                 <div class="text">
                                     <span>Previous</span>
-                                    <p>Overview</p>
+                                    <p>Soca Ganita</p>
                                 </div>
                             </div>
                         </router-link>
                     </div>
                     <div class="button-route">
-                        <router-link to="/changelogs">
+                        <router-link to="/Proctoring-AI">
                             <div class="previous" style="text-align: left;">
                                 <div class="text">
                                     <span>Next</span>
-                                    <p>ChangeLogs</p>
+                                    <p>Proctoring AI</p>
                                 </div>
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">

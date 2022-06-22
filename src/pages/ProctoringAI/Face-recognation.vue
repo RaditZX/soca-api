@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="content-container">
          <h1>Face Recognition</h1>
             <div class="line"></div>
                 <div class="desc">
@@ -22,11 +22,6 @@
                   Many people are familiar with face recognition technology through the FaceID used to unlock iPhones (however, this is only one application of face recognition). Typically, facial recognition does not rely on a massive database of photos to determine an individual’s identity — it simply identifies and recognizes one person as the sole owner of the device, while limiting access to others.
                     </p>
                 </div>
-                   <div class="row">
-                <div class="col-md-12 mt-2">
-                    <h3>Details of Face Authentication</h3>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-12 mt-2">
                     <div class="advantagebox" style=" border-left: 5px solid blue;">
@@ -124,8 +119,8 @@
                                         </svg>
                                     </div>
                                     <div class="col-md-12 mt-2">
-                                        <a href=""><strong>Fighting Fraud</strong></a>
-                                          <p><a href="">Fighting Fraud</a></p>
+                                        <a href=""><strong>API Service Documentation SOCA A.I</strong></a>
+                                          <p><a href="">API Service Documentation SOCA A.I</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -142,9 +137,9 @@
                     <div class="api-details">
                         <div class="head">
                             <div class="api-head">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-                                </svg>
+                               <div class="api-icon">
+                                GET
+                               </div>
                                 <div class="link">
                                     <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
                                     <p style="font-weight: bold;">/v1/users</p>
@@ -157,7 +152,7 @@
                             </div>
                   
                         </div>
-                        <p style="font-weight: bold; margin-left:8px;">Retrieve List All User Images Data</p>
+                        <p style="font-weight: bold; margin-left:8px;">Retrieve List All User Data</p>
                         <div class="details" ref="details">
                             <p>To retrieve a list of user images data that is being tested using proctoring service, by taking data using the presented parameters.</p>
                             <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
@@ -189,9 +184,9 @@
                       <div class="api-details" style="margin-top: 20px;">
                         <div class="head">
                             <div class="api-head">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-                                </svg>
+                                <div class="api-icon">
+                                GET
+                               </div>
                                   <div class="link">
                                     <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
                                     <p style="font-weight: bold;">/v1/users/{id}</p>
@@ -204,7 +199,7 @@
                             </div>
                   
                         </div>
-                        <p style="font-weight: bold; margin-left:8px;">Retrieve One User Data Detailsa</p>
+                        <p style="font-weight: bold; margin-left:8px;">Retrieve One User Data Details</p>
                         <div class="details" ref="details1">
                             <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
                             <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
@@ -231,12 +226,12 @@
                     <div class="api-details" style="margin-top: 20px;">
                         <div class="head">
                             <div class="api-head">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-                                </svg>
+                                <div class="api-icon-post">
+                                POST
+                               </div>
                                   <div class="link">
                                     <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
-                                    <p style="font-weight: bold;">/v1/users/{id}</p>
+                                    <p style="font-weight: bold;">/v1/users</p>
                                 </div>
                             </div>
                             <div class="button-details" ref="buttondetails2" @click="showdetails2()">
@@ -246,7 +241,7 @@
                             </div>
                   
                         </div>
-                        <p style="font-weight: bold; margin-left:8px;">Retrieve One User Data Detailsa</p>
+                        <p style="font-weight: bold; margin-left:8px;">Create User Data</p>
                         <div class="details" ref="details2">
                             <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
                             <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
@@ -275,7 +270,102 @@
                         </div>
 
                     </div>
-                
+
+                    <div class="api-details" style="margin-top: 20px;">
+                        <div class="head">
+                            <div class="api-head">
+                                <div class="api-icon-put">
+                                PUT
+                               </div>
+                                  <div class="link">
+                                    <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
+                                    <p style="font-weight: bold;">/v1/users/{id}</p>
+                                </div>
+                            </div>
+                            <div class="button-details" ref="buttondetails3" @click="showdetails3()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </div>
+                  
+                        </div>
+                        <p style="font-weight: bold; margin-left:8px;">Update User Data</p>
+                        <div class="details" ref="details3">
+                            <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
+                            <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
+                             <p style="font-weight: bold; padding-top: 10px ;">Headers</p>
+                             <div class="query">
+                                <p >token_client</p>
+                                <p style="padding-left: 146px;">string</p>
+                                <p style="padding-left: 53px;">using Token API Credentials in Detail Project</p>
+                             </div>
+                            <p style="font-weight: bold;">Body</p>
+                            <div class="query">
+                                <p >unique_code*</p>
+                                <p style="padding-left: 135px;">string</p>
+                                <p style="padding-left: 50px;">A unique code owned by a user such as a username or user id.</p>
+                             </div>
+                              <div class="query">
+                                <p >full_name*</p>
+                                <p style="padding-left: 155px;">string</p>
+                                <p style="padding-left: 50px;">full_Name owned by users.</p>
+                             </div>
+                             <p style="font-weight: bold; padding-top: 10px ;">Responses</p>
+                              <div class="query">
+                                <p  style="font-weight: bold;">200: OK</p>
+                                <p style="padding-left: 257px;">A successfull responses</p>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="api-details" style="margin-top: 20px;">
+                        <div class="head">
+                            <div class="api-head">
+                                <div class="api-icon-delete">
+                                DELETE
+                               </div>
+                                  <div class="link">
+                                    <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
+                                    <p style="font-weight: bold;">/v1/users{id}</p>
+                                </div>
+                            </div>
+                            <div class="button-details" ref="buttondetails4" @click="showdetails4()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </div>
+                  
+                        </div>
+                        <p style="font-weight: bold; margin-left:8px;">Delete One User Data</p>
+                        <div class="details" ref="details4">
+                            <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
+                            <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
+                             <p style="font-weight: bold; padding-top: 10px ;">Headers</p>
+                             <div class="query">
+                                <p >token_client</p>
+                                <p style="padding-left: 146px;">string</p>
+                                <p style="padding-left: 53px;">using Token API Credentials in Detail Project</p>
+                             </div>
+                            <p style="font-weight: bold;">Body</p>
+                            <div class="query">
+                                <p >unique_code*</p>
+                                <p style="padding-left: 135px;">string</p>
+                                <p style="padding-left: 50px;">A unique code owned by a user such as a username or user id.</p>
+                             </div>
+                              <div class="query">
+                                <p >full_name*</p>
+                                <p style="padding-left: 155px;">string</p>
+                                <p style="padding-left: 50px;">full_Name owned by users.</p>
+                             </div>
+                             <p style="font-weight: bold; padding-top: 10px ;">Responses</p>
+                              <div class="query">
+                                <p  style="font-weight: bold;">200: OK</p>
+                                <p style="padding-left: 257px;">A successfull responses</p>
+                             </div>
+                        </div>
+
+                    </div>
                 
                 </div>
             </div>
@@ -286,15 +376,15 @@
                     <div class="api-details">
                         <div class="head">
                             <div class="api-head">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-                                </svg>
+                                <div class="api-icon">
+                                GET
+                               </div>
                                 <div class="link">
                                     <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
-                                    <p style="font-weight: bold;">/v1/users</p>
+                                    <p style="font-weight: bold;">/v1/users-images</p>
                                 </div>
                             </div>
-                            <div class="button-details" ref="buttondetails" @click="showdetails()">
+                            <div class="button-details" ref="buttondetails5" @click="showdetails5()">
                                 <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                                 <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                                 </svg>
@@ -302,7 +392,7 @@
                   
                         </div>
                         <p style="font-weight: bold; margin-left:8px;">Retrieve List All User Images Data</p>
-                        <div class="details" ref="details">
+                        <div class="details" ref="details5">
                             <p>To retrieve a list of user images data that is being tested using proctoring service, by taking data using the presented parameters.</p>
                             <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
                             <p style="font-weight: bold;">Query</p>
@@ -326,6 +416,191 @@
                               <div class="query">
                                 <p  style="font-weight: bold;">200: OK</p>
                                 <p style="padding-left: 265px;">A successfull responses</p>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="api-details" style="margin-top: 20px;">
+                        <div class="head">
+                            <div class="api-head">
+                                <div class="api-icon">
+                                GET
+                               </div>
+                                  <div class="link">
+                                    <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
+                                    <p style="font-weight: bold;">/v1/users-images/{id}</p>
+                                </div>
+                            </div>
+                            <div class="button-details" ref="buttondetails6" @click="showdetails6()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </div>
+                  
+                        </div>
+                        <p style="font-weight: bold; margin-left:8px;">Retrieve One User Data Details</p>
+                        <div class="details" ref="details6">
+                            <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
+                            <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
+                            <p style="font-weight: bold;">Path</p>
+                            <div class="query">
+                                <p >id*</p>
+                                <p style="padding-left: 210px;">string</p>
+                                <p style="padding-left: 50px;">id of users to get details</p>
+                             </div>
+                            <p style="font-weight: bold; padding-top: 10px ;">Headers</p>
+                             <div class="query">
+                                <p >token_client</p>
+                                <p style="padding-left: 150px;">string</p>
+                                <p style="padding-left: 50px;">using Token API Credentials in Detail Project</p>
+                             </div>
+                             <p style="font-weight: bold; padding-top: 10px ;">Responses</p>
+                              <div class="query">
+                                <p  style="font-weight: bold;">200: OK</p>
+                                <p style="padding-left: 265px;">A successfull responses</p>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div class="api-details" style="margin-top: 20px;">
+                        <div class="head">
+                            <div class="api-head">
+                                <div class="api-icon-post">
+                                POST
+                               </div>
+                                  <div class="link">
+                                    <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
+                                    <p style="font-weight: bold;">/v1/users-images</p>
+                                </div>
+                            </div>
+                            <div class="button-details" ref="buttondetails7" @click="showdetails7()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </div>
+                  
+                        </div>
+                        <p style="font-weight: bold; margin-left:8px;">Create User Data</p>
+                        <div class="details" ref="details7">
+                            <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
+                            <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
+                             <p style="font-weight: bold; padding-top: 10px ;">Headers</p>
+                             <div class="query">
+                                <p >token_client</p>
+                                <p style="padding-left: 146px;">string</p>
+                                <p style="padding-left: 53px;">using Token API Credentials in Detail Project</p>
+                             </div>
+                            <p style="font-weight: bold;">Body</p>
+                            <div class="query">
+                                <p >unique_code*</p>
+                                <p style="padding-left: 135px;">string</p>
+                                <p style="padding-left: 50px;">A unique code owned by a user such as a username or user id.</p>
+                             </div>
+                              <div class="query">
+                                <p >full_name*</p>
+                                <p style="padding-left: 155px;">string</p>
+                                <p style="padding-left: 50px;">full_Name owned by users.</p>
+                             </div>
+                             <p style="font-weight: bold; padding-top: 10px ;">Responses</p>
+                              <div class="query">
+                                <p  style="font-weight: bold;">200: OK</p>
+                                <p style="padding-left: 257px;">A successfull responses</p>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="api-details" style="margin-top: 20px;">
+                        <div class="head">
+                            <div class="api-head">
+                               <div class="api-icon-put">
+                                PUT
+                               </div>
+                                  <div class="link">
+                                    <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
+                                    <p style="font-weight: bold;">/v1/users-images/{id}</p>
+                                </div>
+                            </div>
+                            <div class="button-details" ref="buttondetails8" @click="showdetails8()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </div>              
+                        </div>
+                        <p style="font-weight: bold; margin-left:8px;">Update User Data</p>
+                        <div class="details" ref="details8">
+                            <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
+                            <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
+                             <p style="font-weight: bold; padding-top: 10px ;">Headers</p>
+                             <div class="query">
+                                <p >token_client</p>
+                                <p style="padding-left: 146px;">string</p>
+                                <p style="padding-left: 53px;">using Token API Credentials in Detail Project</p>
+                             </div>
+                            <p style="font-weight: bold;">Body</p>
+                            <div class="query">
+                                <p >unique_code*</p>
+                                <p style="padding-left: 135px;">string</p>
+                                <p style="padding-left: 50px;">A unique code owned by a user such as a username or user id.</p>
+                             </div>
+                              <div class="query">
+                                <p >full_name*</p>
+                                <p style="padding-left: 155px;">string</p>
+                                <p style="padding-left: 50px;">full_Name owned by users.</p>
+                             </div>
+                             <p style="font-weight: bold; padding-top: 10px ;">Responses</p>
+                              <div class="query">
+                                <p  style="font-weight: bold;">200: OK</p>
+                                <p style="padding-left: 257px;">A successfull responses</p>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="api-details" style="margin-top: 20px;">
+                        <div class="head">
+                            <div class="api-head">
+                               <div class="api-icon-delete">
+                                DELETE
+                               </div>
+                                  <div class="link">
+                                    <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
+                                    <p style="font-weight: bold;">/v1/users-images{id}</p>
+                                </div>
+                            </div>
+                            <div class="button-details" ref="buttondetails9" @click="showdetails9()">
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </div>
+                  
+                        </div>
+                        <p style="font-weight: bold; margin-left:8px;">Delete One User Data</p>
+                        <div class="details" ref="details9">
+                            <p>To retrieve a one user data details that is being tested using proctoring service, by taking data using the presented parameters.</p>
+                            <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
+                             <p style="font-weight: bold; padding-top: 10px ;">Headers</p>
+                             <div class="query">
+                                <p >token_client</p>
+                                <p style="padding-left: 146px;">string</p>
+                                <p style="padding-left: 53px;">using Token API Credentials in Detail Project</p>
+                             </div>
+                            <p style="font-weight: bold;">Body</p>
+                            <div class="query">
+                                <p >unique_code*</p>
+                                <p style="padding-left: 135px;">string</p>
+                                <p style="padding-left: 50px;">A unique code owned by a user such as a username or user id.</p>
+                             </div>
+                              <div class="query">
+                                <p >full_name*</p>
+                                <p style="padding-left: 155px;">string</p>
+                                <p style="padding-left: 50px;">full_Name owned by users.</p>
+                             </div>
+                             <p style="font-weight: bold; padding-top: 10px ;">Responses</p>
+                              <div class="query">
+                                <p  style="font-weight: bold;">200: OK</p>
+                                <p style="padding-left: 257px;">A successfull responses</p>
                              </div>
                         </div>
 
@@ -340,23 +615,23 @@
                     <div class="api-details">
                         <div class="head">
                             <div class="api-head">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-                                </svg>
+                                <div class="api-icon-post">
+                                POST
+                               </div>
                                 <div class="link">
                                     <p style="color:rgba(136,153,168,1.00) ;">https://127.0.0.1:5000/api</p>
-                                    <p style="font-weight: bold;">/v1/users</p>
+                                    <p style="font-weight: bold;">/v1/face-recognation</p>
                                 </div>
                             </div>
-                            <div class="button-details" ref="buttondetails" @click="showdetails()">
+                            <div class="button-details" ref="buttondetails10" @click="showdetails10()">
                                 <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
                                 <path d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                                 </svg>
                             </div>
                   
                         </div>
-                        <p style="font-weight: bold; margin-left:8px;">Retrieve List All User Images Data</p>
-                        <div class="details" ref="details">
+                        <p style="font-weight: bold; margin-left:8px;">Facial Recognition Service</p>
+                        <div class="details" ref="details10">
                             <p>To retrieve a list of user images data that is being tested using proctoring service, by taking data using the presented parameters.</p>
                             <p style="font-weight: bold; padding-top: 10px ;">Parameters</p>
                             <p style="font-weight: bold;">Query</p>
@@ -386,6 +661,7 @@
                     </div>
                 </div>
             </div>
+             <h3 class="mt-5">Responses Body</h3>
             <div class="row mt-5">
                 <div class="col-md-12 mt-2">
                     <div class="code-all">
@@ -426,9 +702,9 @@
                     <span>Example Implementation In KP3SKP Proctoring System</span>
                 </div>
             </div>
-                <div class="flex-container">
+        <div class="flex-container">
                     <div class="button-route">
-                        <router-link to="/overview">
+                        <router-link to="/Proctoring-AI">
                             <div class="previous">
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -437,17 +713,17 @@
                                 </div>
                                 <div class="text">
                                     <span>Previous</span>
-                                    <p>Overview</p>
+                                    <p>Proctoring AI</p>
                                 </div>
                             </div>
                         </router-link>
                     </div>
                     <div class="button-route">
-                        <router-link to="/changelogs">
+                        <router-link to="/Proctoring-AI/proctoring">
                             <div class="previous" style="text-align: left;">
                                 <div class="text">
                                     <span>Next</span>
-                                    <p>ChangeLogs</p>
+                                    <p>Proctoring</p>
                                 </div>
                                 <div class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -514,7 +790,111 @@
                     this.$refs.buttondetails2.style.transform = "rotate(0deg)"
                     this.$refs.buttondetails2.style.transition = "all 0.5s"
                 }
-            }
+            },
+            showdetails3() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details3.style.display = "block"
+                    this.$refs.buttondetails3.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails3.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details3.style.display = "none"
+                    this.$refs.buttondetails3.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails3.style.transition = "all 0.5s"
+                }
+            },
+            showdetails4() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details4.style.display = "block"
+                    this.$refs.buttondetails4.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails4.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details4.style.display = "none"
+                    this.$refs.buttondetails4.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails4.style.transition = "all 0.5s"
+                }
+            },
+            showdetails5() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details5.style.display = "block"
+                    this.$refs.buttondetails5.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails5.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details5.style.display = "none"
+                    this.$refs.buttondetails5.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails5.style.transition = "all 0.5s"
+                }
+            },
+            showdetails6() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details6.style.display = "block"
+                    this.$refs.buttondetails6.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails6.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details6.style.display = "none"
+                    this.$refs.buttondetails6.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails6.style.transition = "all 0.5s"
+                }
+            },
+            showdetails7() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details7.style.display = "block"
+                    this.$refs.buttondetails7.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails7.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details7.style.display = "none"
+                    this.$refs.buttondetails7.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails7.style.transition = "all 0.5s"
+                }
+            },
+            showdetails8() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details8.style.display = "block"
+                    this.$refs.buttondetails8.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails8.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details8.style.display = "none"
+                    this.$refs.buttondetails8.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails8.style.transition = "all 0.5s"
+                }
+            },
+            showdetails9() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details9.style.display = "block"
+                    this.$refs.buttondetails9.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails9.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details9.style.display = "none"
+                    this.$refs.buttondetails9.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails9.style.transition = "all 0.5s"
+                }
+            },
+            showdetails10() {
+                if (this.show == false) {
+                    this.show = true
+                    this.$refs.details10.style.display = "block"
+                    this.$refs.buttondetails10.style.transform = "rotate(90deg)"
+                    this.$refs.buttondetails10.style.transition = "all 0.5s"
+                } else {
+                    this.show = false
+                    this.$refs.details10.style.display = "none"
+                    this.$refs.buttondetails10.style.transform = "rotate(0deg)"
+                    this.$refs.buttondetails10.style.transition = "all 0.5s"
+                }
+            },
         }
     }
 </script>
@@ -582,6 +962,62 @@ pre{
     white-space: pre-wrap;
     word-break: break-all;
 }
+
+.api-icon{
+    border: 1px solid #ccc;
+    border-radius:15px;
+    width: 50px;
+    height: 70%;
+    text-align: center;
+    background-color: rgb(77, 77, 236);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+     padding : 2px;
+}
+
+.api-icon-post{
+     border: 1px solid #ccc;
+    border-radius:15px;
+    width: 50px;
+    height: 70%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+     padding : 2px;
+    background-color: rgb(6, 180, 6);
+}
+
+.api-icon-put {
+     border: 1px solid #ccc;
+    border-radius:15px;
+    width: 50px;
+    height: 70%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+     padding : 2px;
+    background-color: rgb(241, 144, 64);
+}
+
+.api-icon-delete{
+     border: 1px solid #ccc;
+    border-radius:15px;
+    width: 60px;
+    height: 70%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding : 2px;
+    background-color: rgb(236, 77, 77);
+}
+
+
+
+
 
 .code-all{
   background-color: rgba(245,247,249,1.00);

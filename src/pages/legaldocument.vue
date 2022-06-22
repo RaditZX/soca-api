@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container" id="content-container" >
     <div class="row">
         <div class="col-md-12">
             <div class="page-header">
@@ -15,14 +15,14 @@
     </div>
     <div class="flex-container">
         <div class="button-route">
-            <router-link to="/legaldocument/terms" class="flex-item">
+            <router-link to="/legaldocument/terms" >
                 <div class="previous" style="text-align: left; padding: 10px;">
                     <p>Terms of Service</p>
                 </div>
             </router-link>  
         </div>
         <div class="button-route">
-            <router-link to="/legaldocument/security-policy" class="flex-item">
+            <router-link to="/legaldocument/security-policy" >
                 <div class="previous" style="text-align: left;  padding: 10px;;"> 
                     <p>Security Policy</p>
                 </div>
@@ -31,14 +31,14 @@
     </div>
     <div class="flex-container">
         <div class="button-route">
-            <router-link to="/legaldocument/privacy-policy" class="flex-item">
+            <router-link to="/legaldocument/privacy-policy" >
                 <div class="previous" style="text-align: left;  padding: 10px;">
                     <p>Privacy Policy</p>
                 </div>
             </router-link>
         </div>
         <div class="button-route">
-            <router-link to="/legaldocument/cookies-policy" class="flex-item">
+            <router-link to="/legaldocument/cookies-policy">
                 <div class="previous" style="text-align: left;  padding: 10px;"> 
                     <p>Cookies Policy</p>
                 </div>

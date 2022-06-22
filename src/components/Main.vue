@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar sticky-top navbar-light bg-white py-3"  >
+    <nav class="navbar sticky-top navbar-light bg-white py-3"  >
       <div class="container-xxl" >
         <div class="vline">
            <div class="menu-toogle" style="" ref="side" @click="sideclick()">
@@ -24,8 +24,9 @@
           </div>
       </div>
     </nav>
-  <div class="container"> 
-        <div class="menu" id="menu" ref="menu" style="margin-top: 80px; ">
+    <div class="container-xxl" >
+      <div class="layout" >
+        <div class="menu" id="menu" ref="menu" >
             <Menuitem 
                v-for="(item, index) in menutree0"
             :key="index"
@@ -35,7 +36,6 @@
             :data="item.children"
             :icon = "item.icon"
             :depth="item.depth"
-
             />
              <br/>
             <Menuitem
@@ -49,7 +49,7 @@
             :depth="item.depth"
             />
             <br/>
-        <div class="menu-item2" >
+          <div class="menu-item2" >
             <Menuitem 
             v-for="(item, index) in menutree1"
             :key="index"
@@ -59,7 +59,7 @@
             :data="item.children"
             :depth="item.depth"
             />
-        </div>
+         </div>
          <div class="menu-item3" style="margin-top: 20px;" >
             <Menuitem
             v-for="(item, index) in menutree2"
@@ -72,14 +72,19 @@
             :depth="item.depth"
             />
          </div>
+        </div>
+        <div class="content">
+          <router-view/>
+        </div>
+     </div>
     </div>
-  </div>
+
 </template>
 
 <script>
 import Menuitem from './Menuitem.vue'
 export default {
-  name: 'recursive-menu',
+  name: 'Main',
   data: () => ({
     sideshow: false,
     menutree0: [
@@ -183,15 +188,16 @@ export default {
   }),
   methods: {
     sideclick(){
-      if (this.sideshow) {
-        this.sideshow = false
-        this.$refs.menu.style.transform = 'TranslateX(0px)'
+      if (!this.sideshow) {
+        this.sideshow = true
+        this.$refs.menu.style.display= 'block'
       }
       else{
-          this.sideshow = true
-          this.$refs.menu.style.transform = 'TranslateX(-100%)'
+          this.sideshow = false
+          this.$refs.menu.style.display= 'none'
       }
-    }
+    },
+    
 
   },
   components : {
@@ -202,134 +208,4 @@ export default {
 
 </script>
 
-<style>
-  .navbar-brand {
-        font-size: 1.75rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding-right: 4rem;
-    }
 
-    .vline{
-        border-right: 1px solid #ececec;
-        display : flex;
-        align-items: center;
-    }
-
-    .navbar-brand > img {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-    }
-    nav {
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-        position: fixed;
-        top: 0;
-        z-index: 100000;
-    }
-
-    .d-flex{
-      border-left: 1px solid #ececec;
-    }
-
-    .d-flex :hover{
-      color: blue;
-      cursor: pointer;
-    }
-
-    .menu slide{
-      transform: translateX(0);
-
-    }
-
-    .menu-toogle{
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      height: 20px;
-      justify-content: space-between;
-      display: none;
-    }
-
-
-    .menu-toogle span{
-      background-color: #000000;
-      width: 28px;
-      height: 3px;
-      margin: 0px 1px;
-      display: block;
-      transition: all 0.3s ease-in-out;
-    }
-    
-
-@media (max-width: 1920px) {
-  .menu{
-    width: 29.5rem;
-    
-  }
-  .container-xxl {
-           max-width: 1500px;
-  }
-
-
-}
-
-@media (max-width: 1700px) {
-  .menu{
-    width: 21.5rem;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .menu{
-    width: 17rem;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .menu{
-    width: 17rem;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .menu{
-    width: 17rem;
-  }
-}
-  
-@media (max-width: 1366px) {
-  .menu{
-    width:16.5rem;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .menu{
-    width: 16.5rem;
-  }
-}
-  
-@media screen and (max-width: 700px) {
-  .menu{
-    transform: TranslateX(-100%); 
-  }
-    .vline{
-            border: none;
-        }
-        .texts{
-            display: none;
-            
-        }
-        .d-flex{
-            border: none;
-        }
-
-        .menu-toogle{
-            display: flex;
-        }
-
-}
-  
-
-</style>

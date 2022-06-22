@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container" id="content-container">
     <h1>Overview</h1>
     <div class="line"></div>
         <div class="desc">
@@ -9,7 +9,7 @@
         </div>
             <div class="flex-container">
                <div class="button-route" >
-                    <router-link to="/socaAI">
+                    <router-link to="/">
                         <div class="previous">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -54,7 +54,7 @@ export default {
 <style>
 .line{
     border-bottom: 1px solid rgb(216, 214, 214);
-    width: 775px;
+    width: 90%;
     height: 30px;
 
 }
@@ -62,7 +62,6 @@ export default {
     margin-top: 20px;
     font-size: 16px;
     line-height: 1.5;
-    max-width: 900px;
 }
 
 a{
@@ -81,6 +80,7 @@ a{
     
 }
 
+
 router-link{
     text-decoration: none;
 }
@@ -98,10 +98,7 @@ router-link{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     color: #000;
     border: 1px solid rgb(180, 180, 180);
-    border-radius: 5px;
-   
-    
-    
+    border-radius: 5px;  
 }
 .previous span{
     font-size: 12px;
@@ -112,6 +109,7 @@ h1{
     font-weight: 700;
     text-decoration: none;
     margin-top: 20px;
+
 }
 
 
@@ -134,105 +132,12 @@ h1{
     width: 100%;
 
 }
-
-
-
-@media  screen and (max-width: 1920px) {
-  .container{
-    max-width: 800px;
-  }
-}
-
-@media screen and (max-width: 1800px) {
-  .container{
-    max-width: 780px;
-  }
-  .line{
-    width: 760px;
-  }
-}
-
-@media screen and (max-width: 1700px) {
-  .container{
-    max-width: 700px;
-  }
-  .line{
-    width: 700px;
-  }
-    
-}
-
-@media screen and (max-width: 1600px) {
-
-  .line{
-    width: 740px;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-
-  .line{
-    width: 720px;
-  }
-}
-    
-@media screen and (max-width: 1400px) {
-  .container{
-    max-width: 700px;
-  }
-  .previous{
-    width: 20rem;
-  }
-  .line{
-    width: 700px;
-  }
-}
-
-@media  screen and (max-width: 1366px) {
-  .previous{
-    width: 18rem;
-  }
-  .line{
-    width: 700px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .previous{
-    width: 20rem;
-  }
-    .line{
-        width: 680px;
-    }
-    
-}
-
-@media screen and (max-width: 1200px) {
-    .line{
-        width: 680px;
-    }
-    
-}
-
-@media screen and (max-width: 1100px) {
-    .line{
-        width: 680px;
-    }
-    
+#content-container{
+  padding: 0px 0 0 300px;
 }
     
 
 @media  screen and (max-width: 700px) {
-  .container{
-    max-width: 680px;
-    overflow-x: hidden;
-  }
-  .previous{
-    width: 100%;
-  }
-    .line{
-        width: 680px;
-    }
    
    .flex-container{
     flex-direction: column;
@@ -245,13 +150,20 @@ h1{
 
    }
 
+   #content-container{
+    padding: 0;
+   }
+
    .flex-containers
    {
-    align-items: flex-start;
-    text-align: left;
+    align-items: flex-start; 
     width: 100%;
 
    }
+
+   .container-fluid{
+    padding: 0px
+}
     
 }
     

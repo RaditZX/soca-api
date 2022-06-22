@@ -1,6 +1,6 @@
 <template>
     <div class="container">  
-        <div class="menu-item" >
+        <div class="menu-item" style="text-align: right;" >
             <div class="header">
                 {{label}}
             </div>
@@ -11,7 +11,7 @@
             </svg>
         </div>
         </router-link>
-            <div class="items-container"   ref="container" v-show="showChildren">
+            <div class="items-container" ref="container" v-show="showChildren">
             <menu-item
                 v-for="(item, index) in data"
                     :key="index"

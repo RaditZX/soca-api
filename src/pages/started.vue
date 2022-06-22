@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="content-container">
          <h1>Getting Started</h1>
             <div class="line"></div>
                 <h2>Register or Login to Dashboard</h2>
@@ -56,14 +56,28 @@
                     Send a POST request to https://api-cloud.soca.ai/auth/signatures, by providing these arguments as application/json with request payload:
                     </p>
                 </div>
-                <div class="code">
-                    <span>you must be post headers similar to this:</span><br/>
-                    <code>{<br/>
-                        "headers": {<br/>
-                            "token_client":"34c513672bb7c4918d52cea989fba1060f8084ece5135df5155c2dec2d98cff1"<br/>
-                        },<br/>
-                        }
-                    </code>
+                 <div class="row mt-5">
+                    <div class="col-md-12 mt-2">
+                        <div class="code-all">
+                            <div class="code"  >
+                                <pre>
+                                    <code ref="jsoncode">
+{
+  "headers": {
+    "token_client":"34c513672bb7c4918d52cea989fba1060f8084ece5135df5155c2dec2d98cff1"
+  },
+}
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="copy-button" @click="copy()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="line"></div>
@@ -157,6 +171,19 @@
     </div>
 </template>
 
+<script>
+export default{
+    name:'Getting-Started',
+    methods:{
+        copy(){
+                var jsoncode = this.$refs.jsoncode.innerHTML;
+                navigator.clipboard.writeText(jsoncode);
+            },
+    }
+}
+
+</script>
+
 <style>
 
  h2{
@@ -170,7 +197,7 @@
  }
 
  .image > img{
-        width: 100%;
+        width: 80%;
         height: auto;
 
  }
